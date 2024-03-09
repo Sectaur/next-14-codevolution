@@ -1,45 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import { useRouter } from "next/router";
 
-export default function BlogFirstPage() {
-  const router = useRouter();
-
-  useEffect(() => {
-    const handleAccordion = () => {
-      const accordionHeaders = document.querySelectorAll(".accordion-header");
-
-      accordionHeaders.forEach((header) => {
-        header.addEventListener("click", () => {
-          const content = header.nextElementSibling;
-          if (content) {
-            content.classList.toggle("hidden");
-          }
-        });
-      });
-    };
-
-    // Only run the accordion functionality on the client-side
-    const accordionHeaders = document.querySelectorAll(".accordion-header");
-
-    accordionHeaders.forEach((header) => {
-      header.addEventListener("click", () => {
-        const content = header.nextElementSibling;
-        if (content) {
-          content.classList.toggle("hidden");
-        }
-      });
-    });
-
-    // Clean up the event listeners on component unmount
-    return () => {
-      accordionHeaders.forEach((header) => {
-        header.removeEventListener("click", handleAccordion);
-      });
-    };
-  }, [router.asPath]);
-
+export default function MasteringHeadNeckUltrasound() {
   return (
     <>
       <Head>
@@ -114,56 +77,38 @@ export default function BlogFirstPage() {
         <section className="curriculum py-16">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8">Course Curriculum</h2>
-            <div className="accordion">
-              <div className="accordion-item">
-                <div className="accordion-header bg-gray-700 p-4 rounded-lg shadow cursor-pointer">
-                  <h3 className="text-xl font-bold mb-0">
-                    Introduction to Head and Neck Ultrasound
-                  </h3>
-                </div>
-                <div className="accordion-content bg-gray-800 p-4 rounded-lg shadow mt-2">
-                  <p>
-                    Overview of the anatomy, indications, and techniques for
-                    head and neck ultrasound examinations.
-                  </p>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <div className="accordion-header bg-gray-700 p-4 rounded-lg shadow cursor-pointer">
-                  <h3 className="text-xl font-bold mb-0">Thyroid Ultrasound</h3>
-                </div>
-                <div className="accordion-content bg-gray-800 p-4 rounded-lg shadow mt-2 hidden">
-                  <p>
-                    Detailed exploration of thyroid ultrasound, including
-                    evaluation of nodules and cancer screening.
-                  </p>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <div className="accordion-header bg-gray-700 p-4 rounded-lg shadow cursor-pointer">
-                  <h3 className="text-xl font-bold mb-0">Neck Ultrasound</h3>
-                </div>
-                <div className="accordion-content bg-gray-800 p-4 rounded-lg shadow mt-2 hidden">
-                  <p>
-                    Techniques for evaluating lymph nodes, salivary glands, and
-                    other neck structures.
-                  </p>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <div className="accordion-header bg-gray-700 p-4 rounded-lg shadow cursor-pointer">
-                  <h3 className="text-xl font-bold mb-0">
-                    Advanced Techniques
-                  </h3>
-                </div>
-                <div className="accordion-content bg-gray-800 p-4 rounded-lg shadow mt-2 hidden">
-                  <p>
-                    Learn about Doppler ultrasound, elastography, and other
-                    advanced techniques for head and neck imaging.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <ol className="list-decimal list-inside">
+              <li>
+                <h3 className="text-xl font-bold mb-2">
+                  Introduction to Head and Neck Ultrasound
+                </h3>
+                <p>
+                  Overview of the anatomy, indications, and techniques for head
+                  and neck ultrasound examinations.
+                </p>
+              </li>
+              <li>
+                <h3 className="text-xl font-bold mb-2">Thyroid Ultrasound</h3>
+                <p>
+                  Detailed exploration of thyroid ultrasound, including
+                  evaluation of nodules and cancer screening.
+                </p>
+              </li>
+              <li>
+                <h3 className="text-xl font-bold mb-2">Neck Ultrasound</h3>
+                <p>
+                  Techniques for evaluating lymph nodes, salivary glands, and
+                  other neck structures.
+                </p>
+              </li>
+              <li>
+                <h3 className="text-xl font-bold mb-2">Advanced Techniques</h3>
+                <p>
+                  Learn about Doppler ultrasound, elastography, and other
+                  advanced techniques for head and neck imaging.
+                </p>
+              </li>
+            </ol>
           </div>
         </section>
 
