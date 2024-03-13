@@ -4,7 +4,10 @@ export default function Docs({ params }: { params: { slug: string[] } }) {
       <div className="flex flex-col">
         {params.slug.map((slug, index) => {
           return (
-            <h1 key={index} className="bg-blue-400 h-[10dvh]">
+            <h1
+              key={index}
+              className="bg-blue-400 h-[10dvh] border-2 border-black"
+            >
               {slug}
             </h1>
           );
@@ -12,5 +15,5 @@ export default function Docs({ params }: { params: { slug: string[] } }) {
       </div>
     );
   }
-  return <h1 className="bg-yellow-400 h-[10dvh]">Docs Catch All</h1>;
+  return <h1 className="flex bg-yellow-400 h-[100dvh]">Docs Catch All</h1>;
 }
