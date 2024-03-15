@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex h-[100dvh] bg-pink-400 text-4xl justify-center items-center">
+    <div className="flex text-4xl font-bold p-2">
       Hello ... this is Next14 !!
     </div>
   );

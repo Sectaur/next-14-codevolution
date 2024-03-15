@@ -15,5 +15,5 @@ export default function Docs({ params }: { params: { slug: string[] } }) {
       </div>
     );
   }
-  return <h1 className="flex bg-yellow-400 h-[100dvh]">Docs Catch All</h1>;
+  return <h1 className="flex bg-yellow-400">Docs Catch All</h1>;
 }

@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex h-[100dvh] bg-purple-400 text-4xl justify-center items-center">
+    <div className="flex text-4xl font-bold p-2">
       Profile Page
     </div>
   );

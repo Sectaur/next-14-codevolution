@@ -1,7 +1,7 @@
 export default function NotFound() {
   return (
-    <div className="flex">
-      <h1 className="flex justify-center items-center w-full bg-red-400 h-[100dvh] font-bold text-4xl">
+    <div className="flex w-full">
+      <h1 className="flex w-full justify-center items-center bg-red-400 font-bold text-4xl">
         Not found page - No Bro - Nada here !
       </h1>
     </div>
