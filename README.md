@@ -34,3 +34,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+## NOTES
+
+### Tutorial 12 - Private Folders
+
+Purpose - to exclude a folder from routing so you can't see in blowser e.g. _lib (underscore)
+
+note %5FFolderName allows the _FolderName to be viewed in browser
+
+
+### Tutorial 13 - Route Groups
+
+Purpose - Logically group files. Helps to organise stuff  e.g. all files inside Auth folder. Don't want "Auth" to be a segment in the URL so wrap in parentheses (auth). That wa y the path wil be by-passed 
+
+### Tutorial 14 - Layouts
+
+RootLayout is mandatory for EVERY NEXT JS App
+
+
