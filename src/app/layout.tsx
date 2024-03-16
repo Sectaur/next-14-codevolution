@@ -1,9 +1,11 @@
-// import global styles
 import "./globals.css";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "Main Layout Metadata",
-  description: "Description in RootLayout",
+export const metadata: Metadata = {
+  title: {
+    default: "Hammy's Blog",
+    template: "%s | Blog",
+  },
 };
 
 export default function RootLayout({

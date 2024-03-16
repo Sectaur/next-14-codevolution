@@ -85,3 +85,13 @@ This can be also be done asynchronously (e.g if you want the title field to be f
 NOTE !!! only one method per page
 
 See blog/second
+
+### Tutorial 18 - Title Metadata
+
+Title can be a string OR object with 3 string properties:
+
+1. default: string - this applies to all child routes - if they dont have their own Metadata title e.g. /profile
+
+2. template: string - "%s \_\_\_\_" - applied to all children %s is replaced by titel within the child
+
+3. absolute: string - overrides template completely so title is completely replaced (not templated)

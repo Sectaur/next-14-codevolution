@@ -1,6 +1,5 @@
 export const metadata = {
   title: "About Page Metadata",
-  description: "Description in About Page",
 };
 
 export default function Home() {
