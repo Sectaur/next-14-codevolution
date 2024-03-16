@@ -1,14 +1,21 @@
+import Link from "next/link";
+
 export default function ProductList() {
+  const productId = 100;
   return (
     <div className="flex flex-col">
-      <div className="flex bg-purple-400 text-2xl justify-center items-center">
-        Product 1
+      <h1 className="flex m-4 text-4xl">Products List</h1>
+      <div className="cursor-pointer h-16 m-2 flex bg-purple-400 hover:bg-purple-700 rounded-md text-2xl justify-center items-center">
+        <Link href={`/products/${productId}`}>Product {productId}</Link>
       </div>
-      <div className="flex bg-green-400 text-2xl justify-center items-center">
-        Product 2
+      <div className="cursor-pointer h-16 m-2 flex bg-green-400 hover:bg-green-700 rounded-md text-2xl justify-center items-center">
+        <Link href="/products/2">Product 2</Link>
       </div>
-      <div className="flex  bg-orange-400 text-2xl justify-center items-center">
-        Product 3
+      <div className="cursor-pointer h-16 m-2 flex  bg-orange-400 hover:bg-orange-700 rounded-md text-2xl justify-center items-center">
+        <Link href="/products/3" replace>
+          {" "}
+          Product 3
+        </Link>
       </div>
     </div>
   );
