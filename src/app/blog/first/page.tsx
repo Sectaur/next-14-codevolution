@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import Head from "next/head";
+
 
 export default function MasteringHeadNeckUltrasound() {
   return (
     <>
-      <Head>
+      <h1>
         <title>Mastering Head and Neck Ultrasound</title>
         <meta
           name="description"
           content="Learn advanced techniques for head and neck ultrasound examinations with our interactive online course."
         />
-      </Head>
-      <main className="bg-gray-900 text-white">
+      </h1>
+      <div className="bg-gray-900 text-white">
         <section className="hero py-20">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -30,7 +30,7 @@ export default function MasteringHeadNeckUltrasound() {
               </div>
               <div className="hero-image">
                 <Image
-                  src="/images/ultrasound.jpg"
+                  src="/head-neck-ultrasound.png"
                   alt="Head and Neck Ultrasound"
                   width={500}
                   height={500}
@@ -169,7 +169,7 @@ export default function MasteringHeadNeckUltrasound() {
             </button>
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }

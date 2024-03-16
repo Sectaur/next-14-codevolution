@@ -35,23 +35,53 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
-
 ## NOTES
 
 ### Tutorial 12 - Private Folders
 
-Purpose - to exclude a folder from routing so you can't see in blowser e.g. _lib (underscore)
+Purpose - to exclude a folder from routing so you can't see in blowser e.g. \_lib (underscore)
 
-note %5FFolderName allows the _FolderName to be viewed in browser
-
+note %5FFolderName allows the \_FolderName to be viewed in browser
 
 ### Tutorial 13 - Route Groups
 
-Purpose - Logically group files. Helps to organise stuff  e.g. all files inside Auth folder. Don't want "Auth" to be a segment in the URL so wrap in parentheses (auth). That wa y the path wil be by-passed 
+Purpose - Logically group files. Helps to organise stuff e.g. all files inside Auth folder. Don't want "Auth" to be a segment in the URL so wrap in parentheses (auth). That wa y the path wil be by-passed
 
 ### Tutorial 14 - Layouts
 
 RootLayout is mandatory for EVERY NEXT JS App
 
+### Tutorial 15 - Nested Routes
 
+can place a layout.tsx inside another route folder which will take in the Page.tsx file in the same folder. BOTH of these then get nested INSIDE the overall RooTLayout (Which is MANDATORY)
+
+Note that the RootLayout is the big dog and dictates EVERYTHING that is shown. It will always 'overwrite'the other nested routes.
+
+### Tutorial 16 - Route Group Layout
+
+Purpose - applies a specific sub-layout to a route group (see above).
+
+1. Create Route Group folder with brackets
+2. place subfloders (routes) inside each with their own page.tsx files
+3. add a layout.tsx to that route group
+   ==> the sub-layout will apply to all Page.Tsx's in the Route Group Folders
+
+### Tutorial 17 - Routing Metadata
+
+Import for SEO.
+
+title and description
+
+1. Method One - Static Metadata
+
+export a metadata object in layout.tsx or page.tsx.at top
+page.tsx metadata >> precedence over >> RootLayout.tsx (more specificity)
+
+2. Method Two - dynamic
+
+fuck me. You can grab the params from a dynamic segment and add them to a function that exports the metadata.
+This can be also be done asynchronously (e.g if you want the title field to be fetched from an API)
+
+NOTE !!! only one method per page
+
+See blog/second

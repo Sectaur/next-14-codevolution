@@ -28,5 +28,6 @@
     ".next/types/**/*.ts",
     "src/app/products/[productId]"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 }

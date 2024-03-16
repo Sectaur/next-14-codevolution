@@ -1,6 +1,6 @@
 export default function SecondBlog() {
   return (
-    <div className="flex text-4xl font-bold p-2">
+    <div className="flex w-full text-4xl bg-indigo-600 font-bold p-2">
       Second Blog Page
     </div>
   );
