@@ -9,7 +9,9 @@ export default function ProductList() {
         <Link href={`/products/${productId}`}>Product {productId}</Link>
       </div>
       <div className="cursor-pointer h-16 m-2 flex bg-green-400 hover:bg-green-700 rounded-md text-2xl justify-center items-center">
-        <Link href="/products/2">Product 2</Link>
+        <Link href="/products/2" replace>
+          Product 2
+        </Link>
       </div>
       <div className="cursor-pointer h-16 m-2 flex  bg-orange-400 hover:bg-orange-700 rounded-md text-2xl justify-center items-center">
         <Link href="/products/3" replace>

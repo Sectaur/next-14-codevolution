@@ -102,7 +102,7 @@ Specificity lies within the component !!!
 
 ### Tutorial 19 - Link
 
-can use dynamic limks e.g. see products
+can use dynamic links e.g. see products
 
 "replace" property in Link deletes routing history
 
