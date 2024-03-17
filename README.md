@@ -107,3 +107,11 @@ can use dynamic links e.g. see products
 "replace" property in Link deletes routing history
 
 ### Tutorial 20 - Active Links
+
+need to use "usePathname" hook NOTE : "use client" needed.
+
+invoke const pathname = usePathname()
+
+then can adjust logic see (comments) route
+
+### Tutorial 21 - Navigating Programmatically
