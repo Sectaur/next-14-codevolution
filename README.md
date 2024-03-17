@@ -39,13 +39,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### Tutorial 12 - Private Folders
 
-Purpose - to exclude a folder from routing so you can't see in blowser e.g. \_lib (underscore)
+Purpose - to exclude a folder from routing so you can't see it in the browser e.g. \_lib (underscore)
 
 note %5FFolderName allows the \_FolderName to be viewed in browser
 
 ### Tutorial 13 - Route Groups
 
-Purpose - Logically group files. Helps to organise stuff e.g. all files inside Auth folder. Don't want "Auth" to be a segment in the URL so wrap in parentheses (auth). That wa y the path wil be by-passed
+Purpose - Logically group files. Helps to organise stuff e.g. all files inside Auth folder. Don't want "Auth" to be a segment in the URL so wrap in parentheses (auth). That way the path wil be by-passed
 
 ### Tutorial 14 - Layouts
 
@@ -68,9 +68,9 @@ Purpose - applies a specific sub-layout to a route group (see above).
 
 ### Tutorial 17 - Routing Metadata
 
-Import for SEO.
+Important for SEO.
 
-title and description
+**title and description**
 
 1. Method One - Static Metadata
 
