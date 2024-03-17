@@ -74,12 +74,12 @@ Important for SEO.
 
 1. Method One - Static Metadata
 
-export a metadata object in layout.tsx or page.tsx.at top
+export a metadata object in layout.tsx or page.tsx. at the top
 page.tsx metadata >> precedence over >> RootLayout.tsx (more specificity)
 
 2. Method Two - dynamic
 
-fuck me. You can grab the params from a dynamic segment and add them to a function that exports the metadata.
+fuck me. You can grab the params from a dynamic segment and add them to a **function that exports the metadata**.
 This can be also be done asynchronously (e.g if you want the title field to be fetched from an API)
 
 NOTE !!! only one method per page
